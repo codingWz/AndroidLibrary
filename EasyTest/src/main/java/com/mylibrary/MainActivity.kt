@@ -1,6 +1,7 @@
 package com.mylibrary
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.TextView
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.baseuilibrary.baserecycler.BaseRecyclerViewAdapter
 import com.baseuilibrary.baserecycler.BaseViewHolder
+import com.baseuilibrary.baserecycler.SingleLineItemDecoration
 import com.baseuilibrary.baserecycler.SingleTypeRecyclerViewAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.recycler_item_single_text.view.*
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             RecyclerView.VERTICAL, false)
         initRecyclerAdapter()
         recyclerView.adapter = mRecyclerAdapter
+        recyclerView.addItemDecoration(SingleLineItemDecoration(Color.GRAY, 2.0f))
     }
 
     private fun initRecyclerAdapter() {
