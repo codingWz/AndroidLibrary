@@ -1,11 +1,13 @@
 package com.mylibrary
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.baseuilibrary.baserecycler.BaseRecyclerViewAdapter
 import com.baseuilibrary.baserecycler.BaseViewHolder
+import com.baseuilibrary.baserecycler.SingleLineItemDecoration
 import kotlinx.android.synthetic.main.activity_multi_type_recycler.*
 
 class MultiTypeRecyclerViewActivity : AppCompatActivity() {
@@ -22,6 +24,14 @@ class MultiTypeRecyclerViewActivity : AppCompatActivity() {
 
     private fun initData() {
         mData = listOf(
+            R.string.app_name,
+            R.mipmap.ic_launcher,
+            R.string.app_name,
+            R.mipmap.ic_launcher_round,
+            R.string.app_name,
+            R.mipmap.ic_launcher,
+            R.string.app_name,
+            R.mipmap.ic_launcher_round,
             R.string.app_name,
             R.mipmap.ic_launcher,
             R.string.app_name,
@@ -62,5 +72,6 @@ class MultiTypeRecyclerViewActivity : AppCompatActivity() {
         mAdapter.data = mData
 
         recyclerView.adapter = mAdapter
+        recyclerView.addItemDecoration(SingleLineItemDecoration(Color.BLUE, 2.0f))
     }
 }
