@@ -1,1 +1,1 @@
-include ':EasyTest', ':BaseUilibrary'
+include ':EasyTest', ':BaseUilibrary', ':CommonLibrary'
