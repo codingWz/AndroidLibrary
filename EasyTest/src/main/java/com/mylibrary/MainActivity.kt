@@ -13,6 +13,7 @@ import com.baseuilibrary.baserecycler.BaseRecyclerViewAdapter
 import com.baseuilibrary.baserecycler.BaseViewHolder
 import com.baseuilibrary.baserecycler.SingleLineItemDecoration
 import com.baseuilibrary.baserecycler.SingleTypeRecyclerViewAdapter
+import com.mylibrary.likeaction.LikeActionActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.recycler_item_single_text.view.*
 
@@ -29,7 +30,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initData() {
-        mData = listOf(MultiTypeRecyclerViewActivity::class.java.simpleName)
+        mData = listOf(
+            MultiTypeRecyclerViewActivity::class.java.simpleName,
+            LikeActionActivity::class.java.name
+            )
     }
 
     private fun initView() {
@@ -61,6 +65,7 @@ class MainActivity : AppCompatActivity() {
         mRecyclerAdapter.onItemClick = { _, position ->
             when (position) {
                 0 -> startActivity(Intent(this, MultiTypeRecyclerViewActivity::class.java))
+                1 -> startActivity(Intent(this, LikeActionActivity::class.java))
             }
         }
 

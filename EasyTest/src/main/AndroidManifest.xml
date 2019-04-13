@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MultiTypeRecyclerViewActivity"/>
+        <activity android:name=".likeaction.LikeActionActivity"/>
     </application>
 
 </manifest>

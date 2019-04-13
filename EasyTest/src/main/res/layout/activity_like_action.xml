@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+    <com.baseuilibrary.LikeActionView
+            android:id="@+id/likeActionView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:likeNum="9990"
+    />
+    <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/likeActionView"
+            android:text="add"
+            android:textAllCaps="false"
+    />
+    <TextView
+            android:id="@+id/refTv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/likeActionView"
+            android:layout_alignTop="@id/likeActionView"
+            android:text="9990"
+            android:gravity="center"
+            android:textColor="#ff000000"
+    />
+
+    <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/likeActionView"
+            android:text="minus"
+            android:textAllCaps="false"
+            android:layout_toRightOf="@id/addBtn"
+    />
+</RelativeLayout>
