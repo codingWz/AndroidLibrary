@@ -202,9 +202,9 @@ class LikeActionView(
             mNewStrWidth = mDefaultPaint.measureText(mNewStr)
         } else {
             mLengthChanged = false
-            mAnimatedOldStr = mOldStr.substring(index..(mOldStr.length - 1))
-            mAnimatedNewStr = mNewStr.substring(index..(mNewStr.length - 1))
-            mCommonOldStr = mOldStr.substring(0..(index - 1))
+            mAnimatedOldStr = mOldStr.substring(index until mOldStr.length)
+            mAnimatedNewStr = mNewStr.substring(index until mNewStr.length)
+            mCommonOldStr = mOldStr.substring(0 until index)
             val rect = Rect()
             mDefaultPaint.getTextBounds(mCommonOldStr, 0, mCommonOldStr.length, rect)
             mCommonOldStrWidth = (rect.right - rect.left).toFloat()

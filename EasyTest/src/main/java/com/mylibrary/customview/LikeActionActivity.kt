@@ -1,4 +1,4 @@
-package com.mylibrary.likeaction
+package com.mylibrary.customview
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

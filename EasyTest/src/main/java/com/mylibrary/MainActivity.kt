@@ -13,7 +13,8 @@ import com.baseuilibrary.baserecycler.BaseRecyclerViewAdapter
 import com.baseuilibrary.baserecycler.BaseViewHolder
 import com.baseuilibrary.baserecycler.SingleLineItemDecoration
 import com.baseuilibrary.baserecycler.SingleTypeRecyclerViewAdapter
-import com.mylibrary.likeaction.LikeActionActivity
+import com.mylibrary.customview.CustomRulerActivity
+import com.mylibrary.customview.LikeActionActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.recycler_item_single_text.view.*
 
@@ -32,7 +33,8 @@ class MainActivity : AppCompatActivity() {
     private fun initData() {
         mData = listOf(
             MultiTypeRecyclerViewActivity::class.java.simpleName,
-            LikeActionActivity::class.java.name
+            LikeActionActivity::class.java.name,
+            CustomRulerActivity::class.java.name
             )
     }
 
@@ -66,6 +68,7 @@ class MainActivity : AppCompatActivity() {
             when (position) {
                 0 -> startActivity(Intent(this, MultiTypeRecyclerViewActivity::class.java))
                 1 -> startActivity(Intent(this, LikeActionActivity::class.java))
+                2 -> startActivity(Intent(this, CustomRulerActivity::class.java))
             }
         }
 

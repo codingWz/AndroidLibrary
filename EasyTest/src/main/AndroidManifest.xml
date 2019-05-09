@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MultiTypeRecyclerViewActivity"/>
-        <activity android:name=".likeaction.LikeActionActivity"/>
+        <activity android:name=".customview.CustomRulerActivity"/>
+        <activity android:name=".coordinatorlayout.CoordinatorActivity"/>
+        <activity android:name=".customview.LikeActionActivity"/>
     </application>
 
 </manifest>
