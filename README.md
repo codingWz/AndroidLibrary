@@ -8,3 +8,4 @@ Common Android Library by Kotlin
 
 support animation by per number
 
+![点赞效果](https://github.com/codingWz/AndroidLibrary/blob/master/EasyTest/examplePictures/LikeActionView.gif)
